@@ -1,0 +1,20 @@
+#include"stdafx.h"
+#include<iostream>
+#include"conio.h"
+using namespace std;
+
+
+int main() {
+	int a;
+	cout << ("Ingrese Por Favor El Numero: ") << endl;
+	cin >> a;
+	if (a>=0) {
+		cout << "Es positivo" << endl;
+	} else {
+		cout << "Es negativo" << endl;
+	}
+	getch ();
+	
+	return 0;
+	
+}
