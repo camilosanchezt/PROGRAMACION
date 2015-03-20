@@ -1,0 +1,26 @@
+#include"stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+
+
+int main() 
+{
+	float a,b,s;
+	cout << "El Sueldo del empleado: " << endl;
+	cin >> a;
+	cout << "Ingrese el sueldo minimo: " << endl;
+	cin >> s;
+	if (a>=s*2) 
+		b = (a*0.15);
+	else 
+		b = a;
+	cout << "La AFP a pagar es: " << b << endl;
+	
+	getch();
+
+	return 0;
+
+}
+
