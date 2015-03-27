@@ -1,6 +1,5 @@
 
-// Sueldo Neto.cpp : Defines the entry point for the console application.
-//
+Sueldo Neto
 
 #include"stdafx.h"
 #include<iostream>
