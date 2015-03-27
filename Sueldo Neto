@@ -1,3 +1,4 @@
+
 // Sueldo Neto.cpp : Defines the entry point for the console application.
 //
 
@@ -7,12 +8,9 @@
 using namespace std;
 
 void main() {
-	float a;
-	float b;
-	float c;
-	float h;
-	float i;
+	int a, b, c, h;
 	float sueldo;
+	float i;
 	cout << "Ingrese el numero de empleados: " << endl;
 	cin >> a;
 	for (h=1;h<=a;h++) {
