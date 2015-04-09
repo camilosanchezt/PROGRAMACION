@@ -1,0 +1,41 @@
+#include"stdafx.h"
+#include<iostream>
+#include "conio.h"
+using namespace std;
+
+
+int main() {
+	float edad;
+	float estudiante;
+	float i;
+	float mayores;
+	float menores;
+	float opc;
+	cout << "TE DAMOS LA BIENVENIDA A NUESTRO PATRON DE EDAD" << endl;
+	cout << "CUANTOS MAYORES Y MENORES DE EDAD EXITEN EN TU CLASE?" << endl;
+	do {
+		cout << "Ahora por favor digite la cantidad de estudiantes en clase: " << endl;
+		cin >> estudiante;
+		mayores = 0;
+		menores = 0;
+		for (i=1;i<=estudiante;i++) {
+			cout << "Digite la edad del estudiante: " << endl;
+			cin >> edad;
+			if (edad>17) {
+				mayores = mayores+1;
+			} else {
+				menores = menores+1;
+			}
+		}
+		cout << "En la clase existen: " << mayores << " Mayores de edad" << endl;
+		cout << "En la clase existen: " << menores << " Menores de edad" << endl;
+		cout << "Desea continuar operando? / (SI.1 o NO.0): " << endl;
+		cin >> opc;
+	} while (opc==1);
+	cout << "Muchas gracias por usar nuestros servicios" << endl;
+	
+	getch();
+	return 0;
+
+}
+
