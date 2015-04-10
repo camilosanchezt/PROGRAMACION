@@ -1,0 +1,27 @@
+#include"stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+
+int main() {
+	int i,n,m,p;
+	cout << "Digite la cantidad de numeros: " << endl;
+	cin >> p;
+	m = -9999;
+	for (i=1;i<=p;i++) {
+		cout << "Digite el numero: " << endl;
+		cin >> n;
+		if (n>m) {
+			m = n;
+		}
+	}
+	cout << "El numero: " << m << " es mayor" << endl;
+	
+	getch();
+
+	return 0;
+
+}
+
+
