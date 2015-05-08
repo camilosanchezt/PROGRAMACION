@@ -1,0 +1,78 @@
+// EcucacionCuadratica.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+
+using namespace std;
+
+float x1, x2;
+
+float determinante (float a, float b, float c);
+void solucion (float a, float b, float c);
+void reales (float a, float b, float c);
+void imginarias (float a, float b, float d);
+float unica (float a, float b);
+
+void main ()
+{float a,b,c,d,x;
+	cout<<"ingrese a:";
+	cin>>a;
+	cout<<"ingrese b:";
+	cin>>b;
+	cout<<"ingrese c:";
+	cin>>c;
+	
+	d=determinante(a,b,c);
+
+		if (d>0)
+		{
+			reales (a,b,c);
+			cout<<"Solucion 1: "<<x1;
+			 cout<<"\nSolucion 2: "<<x2;
+			
+		}
+			else
+				if (d==0)
+				{
+				x=unica(a,b);
+				cout<<"una solucion"<<x;
+				}
+			else {
+				imginarias (a,b,d);
+				cout<<"Solucion 1"<<x1<<" + "<<x2<<"i";
+				cout<<"\nSolucion 2: "<<x1<<" - "<<x2<<"i";
+				
+		}
+	getch();
+		}
+	float determinante (float a, float b, float c)
+	
+{
+		float aux;
+		aux=pow(b,2)-4*a*c;
+		return aux;
+}
+	
+	void reales (float a, float b, float d)
+	{
+		x1=(-b+sqrt(d))/(2*a);
+		x2=(-b-sqrt(d))/(2*a);
+	
+	}
+
+	void imginarias (float a, float b, float d)
+	{
+		x1=-b/(2*a);
+		x2=sqrt(-d)/(2*a);
+	}
+
+	float unica (float a, float b)
+	{
+		float x;
+			x=-b/(2*a);
+	return x;
+
+	}
